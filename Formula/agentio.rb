@@ -1,7 +1,7 @@
 class Agentio < Formula
   desc "CLI for LLM agents to interact with communication and tracking services"
   homepage "https://github.com/plosson/agentio"
-  version "0.1.5"
+  version "0.1.7"
   license "MIT"
 
   on_macos do
