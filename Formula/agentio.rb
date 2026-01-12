@@ -1,26 +1,26 @@
 class Agentio < Formula
   desc "CLI for LLM agents to interact with communication and tracking services"
   homepage "https://github.com/plosson/agentio"
-  version "0.1.23"
+  version "0.1.24"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/plosson/agentio/releases/download/v#{version}/agentio-darwin-arm64"
-      sha256 "09aaec8d1483b7e4f303cbdea400515fe45a5b486786a6fb82f3be042a98c9ba"
+      sha256 "0f597b27c7d2e43fd890ba0bcdd1d7de832e6b8299817b6fa0a505696baff5c5"
     else
       url "https://github.com/plosson/agentio/releases/download/v#{version}/agentio-darwin-x64"
-      sha256 "89e96e1bedd575ddddc424627a401766ad3592b6a3c7a04e7916505b083c6878"
+      sha256 "54469962f98201a7e2d1159c77ae87f90be4093dde1f8f341718cdf85e9c796d"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/plosson/agentio/releases/download/v#{version}/agentio-linux-arm64"
-      sha256 "b69485ac52dabe88e34f23e25922781a42e850ebbc65689908b3f62883e7d895"
+      sha256 "8af5466b03ed7272d3c56189ba4dffdab25a5a5fc6f52fecb68fc00e5b7ba5c6"
     else
       url "https://github.com/plosson/agentio/releases/download/v#{version}/agentio-linux-x64"
-      sha256 "05522d78ba6cb996eff10f9e8c274525bfc7d3202a14bcf39c7b1c342516f622"
+      sha256 "5446fde08f19ace5b6703b6d33e649800f6ddb700583fc630ed732169d25b71b"
     end
   end
 
